@@ -3,7 +3,7 @@
 Original Publish Date: 26 May, 2021  
 Updated on: 26 May, 2021
 
-This page describes the technical specifications of the *Socio-hydrological resilience dataset for Mexico city and its Metropolitan Area*. The data is presented as geometric polygon features representing the administrative areas.
+This page describes the technical specifications of the *Socio-hydrological resilience dataset for Mexico city and its Metropolitan Area*. The data is presented as geometric polygon features representing administrative areas.
 
 ## Methodology
 
@@ -11,7 +11,7 @@ This research project was developed by the British Geological Survey, the Archit
 
 ## General description
 
-The dataset comprises a set of variables that describe socio-hydrological vulnerability and the effects of building constructed wetlands for geographic areas called Colonias (n = 2785). Additionally, the effects of constructed wetlands are summarised at larger administrative areas called Alcaldias (n = ). The variables represent a description of the baseline (no constructed wetlands) for the **actual 2020 and future 2050** situations and the estimation of the impacts of **4 budgets schemes**. Socio-hydrological vulnerability is represented by a **Socio-hydrological index (SHI)** which is the quotient between the **Water Stress index (WSI)** and the **Adaptive Capacity index (ACI)**.
+The dataset comprises a set of variables that describe socio-hydrological vulnerability and the effects of building constructed wetlands for geographic areas called Colonias (n = 2785). Additionally, the effects of constructed wetlands are summarised at larger administrative areas called Alcaldias (n = ). The variables represent a description of the baseline (no constructed wetlands) for the **actual 2020 and future 2050** situations and the estimation of the impacts of **4 budget schemes**. Socio-hydrological vulnerability is represented by a **Socio-hydrological index (SHI)** which is the quotient between the **Water Stress index (WSI)** and the **Adaptive Capacity index (ACI)**.
 
 The impact of **Constructed Wetlands (CW)** in each Colonia is presented as the total amount of CW measured in square meters, and measured as total budget when this variable is aggregated to Alcaldias. Finally, the indexes and effects of CW (SHI, WSI, ACI and CW) are calculated for **3 world-views scenarios; Stakeholder, Environmental and Social**. As illustrated in the data-cube figure below the combination of these parameters make up 120 variables for Colonias and 30 variables for Alcaldias (budget 0 variables for CW should be removed as this budget produces no impact making a final total of 114 and 24 variables)
 
@@ -45,8 +45,19 @@ The name of the variables is created from a string of the different parameters a
 
 ## NA values
 
-Occasionally some variables show a NA values. This occurs when it was not possible to compute the value due to missing data or when there is no constructed wetland built.
+Occasionally some variables show NA values. This occurs when it was not possible to compute the value due to missing data or when there is no constructed wetland built.
+
+## Indices classes (or levels)
 
 ## Files
 
 The files containing the data are detailed below
+
+| Name                    | Description                                                                                                                   | Download URL                                                                                 |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| colonias_all_nc.geojson | 2785 features with 118 fields and geometry type Polygon. This file doesn't have a class descriptor for indices (nc- no class) | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_nc.geojson> |
+|                         |                                                                                                                               |                                                                                              |
+|                         |                                                                                                                               |                                                                                              |
+
+
+## Colour schemes
