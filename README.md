@@ -47,17 +47,69 @@ The name of the variables is created from a string of the different parameters a
 
 Occasionally some variables show NA values. This occurs when it was not possible to compute the value due to missing data or when there is no constructed wetland built.
 
-## Indices classes (or levels)
+## Indices classes (or levels) & colour schemes
+
+The values of all indices (SHI, WSI and ACI) are categorised and organised according to the following tables of value breaks, classes and colours
+
+### SHI
+
+|   Value   |    Class     |  Colour  |
+|:---------:|:------------:|:--------:|
+| 0.0 - 0.6 | Little to no | \#003496 |
+| 0.6 - 0.8 | Little to no | \#567bbb |
+| 0.8 - 1.0 | Little to no | \#adc3e0 |
+| 1.0 - 1.2 |   Moderate   | \#fef9e4 |
+| 1.2 - 1.4 |   Moderate   | \#fee2a4 |
+| 1.4 - 1.6 |   Moderate   | \#fdca65 |
+| 1.6 - 1.8 |   Moderate   | \#fdb225 |
+| 1.8 - 2.0 |   Moderate   | \#ee8311 |
+| 2.0 - 2.2 | Significant  | \#d4411e |
+| 2.2 - 2.4 | Significant  | \#bd1a21 |
+| 2.4 - 2.6 | Significant  | \#ab1319 |
+| 2.6 - 2.8 | Significant  | \#990d10 |
+| 2.8 - 3.0 | Significant  | \#870608 |
+| 3.0 - 8.0 |   Extreme    | \#750000 |
+
+### WSI
+
+|   Value   |   Class   |  Colour  |
+|:---------:|:---------:|:--------:|
+| 0.0 - 0.1 | Very low  | \#ffffff |
+| 0.1 - 0.2 | Very low  | \#ffffff |
+| 0.2 - 0.3 |    Low    | \#ffffff |
+| 0.3 - 0.4 |    Low    | \#ffffff |
+| 0.4 - 0.5 | Moderate  | \#ffffff |
+| 0.5 - 0.6 | Moderate  | \#dff6fa |
+| 0.6 - 0.7 |   High    | \#87cce1 |
+| 0.7 - 0.8 |   High    | \#2fa2c7 |
+| 0.8 - 0.9 | Very high | \#01568b |
+| 0.9 - 1.0 | Very high | \#00316b |
+
+### ACI
+
+|   Value   |   Class   |  Colour  |
+|:---------:|:---------:|:--------:|
+| 0.0 - 0.1 | Very low  | \#00403F |
+| 0.1 - 0.2 | Very low  | \#005651 |
+| 0.2 - 0.3 |    Low    | \#006D64 |
+| 0.3 - 0.4 |    Low    | \#008476 |
+| 0.4 - 0.5 | Moderate  | \#009B89 |
+| 0.5 - 0.6 | Moderate  | \#19B09E |
+| 0.6 - 0.7 |   High    | \#4CC2B6 |
+| 0.7 - 0.8 |   High    | \#7FD5CE |
+| 0.8 - 0.9 | Very high | \#B2E7E6 |
+| 0.9 - 1.0 | Very high | \#E5FAFE |
+
+The [interactive](https://npalomin.github.io/BGS/2bu_2ye.html) mock-up shows the map legends for SHI, WSI and ACI maps
+
+<img src="interactive-mu.png" width="600" style="margin:0px 0px"/>
 
 ## Files
 
 The files containing the data are detailed below
 
-| Name                    | Description                                                                                                                   | Download URL                                                                                 |
-|-------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| colonias_all_nc.geojson | 2785 features with 118 fields and geometry type Polygon. This file doesn't have a class descriptor for indices (nc- no class) | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_nc.geojson> |
-|                         |                                                                                                                               |                                                                                              |
-|                         |                                                                                                                               |                                                                                              |
-
-
-## Colour schemes
+| Name                    | Description                                                                                                                                                             | Download URL                                                                                 |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| colonias_all_nc.geojson | 2785 features with 118 fields and geometry type Polygon. This file doesn't have a class descriptor for indices (nc- no class)                                           | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_nc.geojson> |
+| colonias_all_wc.geojson | 2785 features with 208 fields and geometry type Polygon (90 additional fields with 'class' variable). This file has a **class** descriptor for indices (wc- with class) | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_wc.geojson> |
+|                         |                                                                                                                                                                         |                                                                                              |
