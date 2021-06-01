@@ -102,6 +102,14 @@ The [interactive](https://npalomin.github.io/BGS/2bu_2ye.html) mock-up shows the
 
 <img src="interactive-mu.png" width="600" style="margin:0px 0px"/>
 
+This [interactive](https://npalomin.github.io/BGS/alcaldia.html) maps shows calculations of CW at Alcaldia level. The budget values come from the following formula
+
+| Budget         | Fromula        |
+|----------------|----------------|
+| Budget (pesos) | CW_sqm / 72000 |
+
+<img src="interactive-al.png" width="600" style="margin:0px 0px"/>
+
 ## Files
 
 The files containing the data are detailed below
@@ -112,6 +120,25 @@ The files containing the data are detailed below
 | colonias_all_wc.geojson | 2785 features with 232 fields and geometry type Polygon (90 additional fields with 'class' variable). This file has a **class** descriptor for indices (wc- with class) | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_wc.geojson> |
 | alcaldias.geojson       | 23 features and 25 fields and geometry type MultiPolygon                                                                                                                | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/main/alcaldias.geojson>         |
 | cdmx.geojson            | 1 feature showing administrative boundary of Mexico City                                                                                                                | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/main/cdmx.geojson>              |
+
+## Benefits variables
+
+The impacts of the CW is shown as a series of benefits variables (on a side summary panel). These can be calculated from the CW_sqm and CW_perc variables according to the following table.
+
+| Benefit                    | Formula          |
+|----------------------------|------------------|
+| Population impacted        | CW_perc \* pop   |
+| Homes impacted             | CW_sqm / 2       |
+| Water filtered yearly (lt) | CW_sqm \* 18000  |
+| Rain filtered yearly (lt)  | CW_sqm \* 6000   |
+| Cattail plants yearly      | CW_sqm \* 3      |
+| Arum lilies yearly         | CW_sqm \* 32     |
+| Maintenance jobs           | CW_sqm \* 0.0625 |
+| Manufacture jobs           | CW_sqm \* 0.0115 |
+
+This [interactive](https://npalomin.github.io/BGS/coloniaCW.html) map shows the benefit variables for each Colonia in the corresponding tooltip
+
+<img src="interactive-co.png" width="600" style="margin:0px 0px"/>
 
 ## NA values
 
