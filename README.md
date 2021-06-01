@@ -106,7 +106,7 @@ This [interactive](https://npalomin.github.io/BGS/alcaldia.html) maps shows calc
 
 | Budget         | Fromula        |
 |----------------|----------------|
-| Budget (pesos) | CW_sqm / 72000 |
+| Budget (pesos) | CW_sqm / 72000 (? or * 18000) |
 
 <img src="interactive-al.png" width="600" style="margin:0px 0px"/>
 
