@@ -104,11 +104,29 @@ The [interactive](https://npalomin.github.io/BGS/2bu_2ye.html) mock-up shows the
 
 This [interactive](https://npalomin.github.io/BGS/alcaldia.html) maps shows calculations of CW at Alcaldia level. The budget values come from the following formula
 
-| Budget         | Fromula        |
-|----------------|----------------|
-| Budget (pesos) | CW_sqm / 72000 (? or * 18000) |
+| Budget         | Formula         |
+|----------------|-----------------|
+| Budget (pesos) | CW_sqm \* 18000 |
 
 <img src="interactive-al.png" width="600" style="margin:0px 0px"/>
+
+### CW colour scheme
+
+The breaks for the CW maps are created with the natural break or "jenks" algorithm. The table shows the breaks and corresponding colour from lower (1) t higher (10)
+
+| Break | Colour  |
+|:-----:|:-------:|
+|   1   | #EAEBB2 |
+|   2   | #D6D996 |
+|   3   | #C3C87B |
+|   4   | #B0B760 |
+|   5   | #9CA645 |
+|   6   | #889334 |
+|   7   | #727F2E |
+|   8   | #5D6A28 |
+|   9   | #475522 |
+|  10   | #32411C |
+
 
 ## Files
 
