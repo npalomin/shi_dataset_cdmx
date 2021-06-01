@@ -111,6 +111,7 @@ The files containing the data are detailed below
 | colonias_all_nc.geojson | 2785 features with 142 fields and geometry type Polygon. This file doesn't have a class descriptor for indices (nc- no class)                                           | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_nc.geojson> |
 | colonias_all_wc.geojson | 2785 features with 232 fields and geometry type Polygon (90 additional fields with 'class' variable). This file has a **class** descriptor for indices (wc- with class) | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_wc.geojson> |
 | alcaldias.geojson       | 23 features and 25 fields and geometry type MultiPolygon                                                                                                                | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/main/alcaldias.geojson>         |
+| cdmx.geojson            | 1 feature showing administrative boundary of Mexico City                                                                                                                | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/main/cdmx.geojson>              |
 
 ## NA values
 
