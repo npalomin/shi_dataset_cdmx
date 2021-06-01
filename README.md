@@ -1,13 +1,13 @@
 # Socio-hydrological resilience dataset Mexico city and Metropolitan Area
 
 Original Publish Date: 26 May, 2021  
-Updated on: 26 May, 2021
+Updated on: 01 Jun, 2021
 
 This page describes the technical specifications of the *Socio-hydrological resilience dataset for Mexico city and its Metropolitan Area*. The data is presented as geometric polygon features representing administrative areas.
 
 ## Methodology
 
-This research project was developed by the British Geological Survey, the Architectural Association, the Centre for Advanced Spatial Analysis and Fluxus. For more information about the project and methodology visit the project [website](https://www.mexicoshr.com/){target="\_blank"}.
+This research project was developed by the British Geological Survey, the Architectural Association, the Centre for Advanced Spatial Analysis and Fluxus. For more information about the project and methodology visit the project [website](https://www.mexicoshr.com/).
 
 ## General description
 
@@ -31,6 +31,7 @@ The name of the variables is created from a string of the different parameters a
 | WSI           | Water Stress index                                        |
 | ACI           | Adaptive Capacity index                                   |
 | CW_sqm        | Constructed Wetlands in square metres                     |
+| CW_perc       | Percentage of homes with CW                               |
 | c             | current 2020                                              |
 | f             | future 2050                                               |
 | w1            | Stakeholder (weighting)                                   |
@@ -42,10 +43,7 @@ The name of the variables is created from a string of the different parameters a
 | b3            | 500,000 constructed wetlands                              |
 | b4            | maximum constructed wetlands                              |
 | cl            | class. The index (SHI, WSI, ACI) reclassified into levels |
-
-## NA values
-
-Occasionally some variables show NA values. This occurs when it was not possible to compute the value due to missing data or when there is no constructed wetland built.
+| budget        | Total budget invested in CW by Alcaldia                   |
 
 ## Indices classes (or levels) & colour schemes
 
@@ -100,7 +98,7 @@ The values of all indices (SHI, WSI and ACI) are categorised and organised accor
 | 0.8 - 0.9 | Very high | \#B2E7E6 |
 | 0.9 - 1.0 | Very high | \#E5FAFE |
 
-The [interactive](https://npalomin.github.io/BGS/2bu_2ye.html) mock-up shows the map legends for SHI, WSI and ACI maps
+The [interactive](https://npalomin.github.io/BGS/2bu_2ye.html) mock-up shows the map legends for SHI, WSI and ACI maps. This mock-up also shows the information included in Tooltips.
 
 <img src="interactive-mu.png" width="600" style="margin:0px 0px"/>
 
@@ -112,4 +110,8 @@ The files containing the data are detailed below
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | colonias_all_nc.geojson | 2785 features with 142 fields and geometry type Polygon. This file doesn't have a class descriptor for indices (nc- no class)                                           | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_nc.geojson> |
 | colonias_all_wc.geojson | 2785 features with 232 fields and geometry type Polygon (90 additional fields with 'class' variable). This file has a **class** descriptor for indices (wc- with class) | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/master/colonias_all_wc.geojson> |
-|                         |                                                                                                                                                                         |                                                                                              |
+| alcaldias.geojson       | 23 features and 25 fields and geometry type MultiPolygon                                                                                                                | <https://raw.githubusercontent.com/npalomin/shi_dataset_cdmx/main/alcaldias.geojson>         |
+
+## NA values
+
+Occasionally some variables show NA values. This occurs when it was not possible to compute the value due to missing data or when there is no constructed wetland built.
