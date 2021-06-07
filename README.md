@@ -127,6 +127,21 @@ The breaks for the CW maps are created with the natural break or "jenks" algorit
 |   9   | #475522 |
 |  10   | #32411C |
 
+The 10 breaks in the previous table have the following values for ALCALDIAS (sqm) and COLONIAS (pesos) - (this requires testing to highlight Colonias that have an impact from CW across budgets, particularly for the smallest tiers)
+
+| ALCALDIA - Value (pesos) | COLONIA - Value (sqm) | Colour  |
+|:------------------------:|:---------------------:|:-------:|
+|        0 - 72000         |        0 - 286        | #EAEBB2 |
+|    72000 - 426384000     |       286 - 918       | #D6D996 |
+|  426384000 - 1038780000  |      918 - 1822       | #C3C87B |
+| 1038780000 - 1726308000  |      1822 - 3134      | #B0B760 |
+| 1726308000 - 2561544000  |      3134 - 4986      | #9CA645 |
+| 2561544000 - 3516336000  |      4986 - 7960      | #889334 |
+| 3516336000 - 4961268000  |     7960 - 12620      | #727F2E |
+| 4961268000 - 6366888000  |     12620 - 20796     | #5D6A28 |
+| 6366888000 - 9068724000  |     20796 - 41446     | #475522 |
+| 9068724000 - 10000000000 |     41446 - 50000     | #32411C |
+
 
 ## Files
 
