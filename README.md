@@ -114,34 +114,33 @@ This [interactive](https://npalomin.github.io/BGS/alcaldia.html) maps shows calc
 
 The breaks for the CW maps are created with the natural break or "jenks" algorithm. The table shows the breaks and corresponding colour from lower (1) t higher (10)
 
-| Break | Colour  |
-|:-----:|:-------:|
-|   1   | #EAEBB2 |
-|   2   | #D6D996 |
-|   3   | #C3C87B |
-|   4   | #B0B760 |
-|   5   | #9CA645 |
-|   6   | #889334 |
-|   7   | #727F2E |
-|   8   | #5D6A28 |
-|   9   | #475522 |
-|  10   | #32411C |
+| Break |  Colour  |
+|:-----:|:--------:|
+|   1   | \#EAEBB2 |
+|   2   | \#D6D996 |
+|   3   | \#C3C87B |
+|   4   | \#B0B760 |
+|   5   | \#9CA645 |
+|   6   | \#889334 |
+|   7   | \#727F2E |
+|   8   | \#5D6A28 |
+|   9   | \#475522 |
+|  10   | \#32411C |
 
 The 10 breaks in the previous table have the following values for ALCALDIAS (pesos) and COLONIAS (sqm) - (this requires testing to highlight Colonias that have an impact from CW across budgets, particularly for the smallest tiers)
 
-| ALCALDIA - Value (pesos) | COLONIA - Value (sqm) | Colour  |
-|:------------------------:|:---------------------:|:-------:|
-|        0 - 72000         |        0 - 286        | #EAEBB2 |
-|    72000 - 426384000     |       286 - 918       | #D6D996 |
-|  426384000 - 1038780000  |      918 - 1822       | #C3C87B |
-| 1038780000 - 1726308000  |      1822 - 3134      | #B0B760 |
-| 1726308000 - 2561544000  |      3134 - 4986      | #9CA645 |
-| 2561544000 - 3516336000  |      4986 - 7960      | #889334 |
-| 3516336000 - 4961268000  |     7960 - 12620      | #727F2E |
-| 4961268000 - 6366888000  |     12620 - 20796     | #5D6A28 |
-| 6366888000 - 9068724000  |     20796 - 41446     | #475522 |
-| 9068724000 - 10000000000 |     41446 - 50000     | #32411C |
-
+| ALCALDIA - Value (pesos) | COLONIA - Value (sqm) |  Colour  |
+|:------------------------:|:---------------------:|:--------:|
+|        0 - 72000         |        0 - 286        | \#EAEBB2 |
+|    72000 - 426384000     |       286 - 918       | \#D6D996 |
+|  426384000 - 1038780000  |      918 - 1822       | \#C3C87B |
+| 1038780000 - 1726308000  |      1822 - 3134      | \#B0B760 |
+| 1726308000 - 2561544000  |      3134 - 4986      | \#9CA645 |
+| 2561544000 - 3516336000  |      4986 - 7960      | \#889334 |
+| 3516336000 - 4961268000  |     7960 - 12620      | \#727F2E |
+| 4961268000 - 6366888000  |     12620 - 20796     | \#5D6A28 |
+| 6366888000 - 9068724000  |     20796 - 41446     | \#475522 |
+| 9068724000 - 10000000000 |     41446 - 50000     | \#32411C |
 
 ## Files
 
@@ -173,7 +172,7 @@ This [interactive](https://npalomin.github.io/BGS/coloniaCW.html) map shows the 
 
 <img src="interactive-co.png" width="600" style="margin:0px 0px"/>
 
-## Weightings
+## Weightings and scenario descriptions
 
 ### WSI
 
@@ -190,6 +189,14 @@ This [interactive](https://npalomin.github.io/BGS/coloniaCW.html) map shows the 
 |  w1_stakeholder scenario  |         0.26          |          0.17          |        0.31         |          0.16          |
 | w2_environmental scenario |          0.4          |          0.41          |         0.1         |          0.09          |
 |    w3_social scenario     |         0.08          |          0.12          |        0.39         |          0.41          |
+
+### Scenario descriptions
+
+|         Scenario          |                                                                                                                           Description                                                                                                                            |
+|:-------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|  w1_stakeholder scenario  | derived from surveys with different authorities of the CDMX that are experts in related topics, including authorities from the Secretaría de Protección Civil, Fondo para la Comunicación y Educación Ambiental, Isla Urbana and Loreto y Peña Ecological Park.  |
+| w2_environmental scenario |                      environmental scientist who believes that water scarcity is the most important factor of water stress and that the natural and physical capacities of an area are essential for it to be able to face climate change.                       |
+|    w3_social scenario     |                              expert who believes that equal access to water is fundamental for water security and that improving social aspects related to economic and human resource capacities is key to facing climate change.                               |
 
 ## NA values
 
