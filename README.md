@@ -173,6 +173,24 @@ This [interactive](https://npalomin.github.io/BGS/coloniaCW.html) map shows the 
 
 <img src="interactive-co.png" width="600" style="margin:0px 0px"/>
 
+## Weightings
+
+### WSI
+
+|         Scenario          | Water Variation (WV) | Water Scarcity (WS) | Water Exploitation (WE) | Water Pollution (WP) |
+|:-------------------------:|:--------------------:|:-------------------:|:-----------------------:|:--------------------:|
+|  w1_stakeholder scenario  |         0.15         |        0.27         |          0.39           |         0.19         |
+| w2_environmental scenario |         0.17         |         0.5         |          0.14           |         0.19         |
+|    w3_social scenario     |         0.13         |        0.55         |          0.23           |         0.09         |
+
+### ACI
+
+|         Scenario          | Natural Capacity (NC) | Physical Capacity (PC) | Human Capacity (HC) | Economic Capacity (EC) |
+|:-------------------------:|:---------------------:|:----------------------:|:-------------------:|:----------------------:|
+|  w1_stakeholder scenario  |         0.26          |          0.17          |        0.31         |          0.16          |
+| w2_environmental scenario |          0.4          |          0.41          |         0.1         |          0.09          |
+|    w3_social scenario     |         0.08          |          0.12          |        0.39         |          0.41          |
+
 ## NA values
 
 Occasionally some variables show NA values. This occurs when it was not possible to compute the value due to missing data or when there is no constructed wetland built.
